@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stokEkle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backcolor1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonlines"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ürün Ekle"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/textcolor1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="saveEvent">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="30dp"
+                    android:text="Tamam"
+                    android:gravity="right"
+                    android:layout_marginTop="11dp"
+                    android:textColor="@color/textcolor1"/>
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/savebutton"
+                    android:onClick="saveEvent"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:id="@+id/linearLayoutFocusable1"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ürün Adı"
+                android:id="@+id/text_urunadi_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_urunadi_stokekle"
+                android:layout_marginLeft="5dp"
+                android:editable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="\?"
+                android:id="@+id/button_urunadi_stokekle"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:background="@drawable/buttonlines"
+                android:onClick="stokkoduEvent"
+                android:textColor="@color/textcolor1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Miktar"
+                android:id="@+id/text_miktar_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_miktar_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Birim Fiyat"
+                android:id="@+id/text_birimfiyat_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_birimfiyat_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="İskonto 1 (%)"
+                android:id="@+id/text_isk1_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_isk1_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="İskonto 2 (%)"
+                android:id="@+id/text_isk2_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_isk2_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="İskonto 3 (%)"
+                android:id="@+id/text_isk3_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_isk3_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="KDV"
+                android:id="@+id/text_kdv_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <Spinner
+                android:layout_width="715dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_kdv_stokekle"
+                android:entries="@array/kdvtipleri"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tutar"
+                android:id="@+id/text_tutar_stokekle"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_tutar_stokekle"
+                android:selectAllOnFocus="true"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

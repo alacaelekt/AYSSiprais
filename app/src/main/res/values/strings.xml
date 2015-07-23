@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AYS Sipariş</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="title_activity_anaekran">Ana Ekran</string>
+    <string name="title_activity_ziyaret">Ziyaret</string>
+
+    <string-array name="ziyaret_tamamlandi">
+        <item>Hayır</item>
+        <item>Evet</item>
+    </string-array>
+    <string-array name="kdvtipleri">
+        <item>Vergi tanımsız</item>
+        <item>YOK</item>
+        <item>K.D.V. (%) 1</item>
+        <item>K.D.V. (%) 8</item>
+        <item>K.D.V. (%) 18</item>
+        <item>K.D.V. (%) 26</item>
+        <item>ÖZEL MATRAH</item>
+    </string-array>
+
+    <string-array name="listmenu">
+        <item>Sil</item>
+    </string-array>
+
+    <string name="title_activity_carilistele">Cari Seç</string>
+    <string name="title_activity_adreslistele">Adres Seç</string>
+    <string name="title_activity_cariler">Cariler</string>
+    <string name="title_activity_stoklar">Stoklar</string>
+    <string name="title_activity_stoklar2">Stoklar 2</string>
+    <string name="title_activity_anaekran1">Ana Ekran</string>
+    <string name="title_activity_siparis">Sipariş</string>
+    <string name="title_activity_test">Test</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_stokekle">Yeni Ürün</string>
+    <string name="title_activity_stoklistele">stoklistele</string>
+    <string name="title_activity_ayarlar">ayarlar</string>
+    <string name="title_activity_depolistele">depolistele</string>
+
+</resources>

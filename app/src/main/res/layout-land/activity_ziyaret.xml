@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonlines"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ziyaret Ekranı"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/textcolor1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="|  Personel Kodu"
+            android:id="@+id/text_perkod"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/textcolor1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="saveEvent">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="30dp"
+                    android:text="Kaydet"
+                    android:gravity="right"
+                    android:layout_marginTop="11dp"
+                    android:textColor="@color/textcolor1"/>
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/savebutton"
+                    android:onClick="saveEvent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cari Ünvan"
+                android:id="@+id/text_carikodu"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_carikodu"
+                android:layout_marginLeft="5dp"
+                android:editable="false"
+                android:singleLine="true"/>
+            <!-- android:selectAllOnFocus="true" -->
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="\?"
+                android:id="@+id/button_carikodu"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:background="@drawable/buttonlines"
+                android:onClick="carikoduEvent"
+                android:textColor="@color/textcolor1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Adres No"
+                android:id="@+id/text_adresno"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="650dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_adresno"
+                android:editable="false"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="\?"
+                android:id="@+id/button_adresno"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:background="@drawable/buttonlines"
+                android:onClick="adresnoEvent"
+                android:textColor="@color/textcolor1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Baş. / Bit. Tarihi"
+                android:id="@+id/text_tarih"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/edit_bastarih"
+                android:focusable="false" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/edit_bassaat"
+                android:focusable="false" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/edit_bittarih"
+                android:layout_marginLeft="25dp"
+                android:focusable="false"  />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/edit_bitsaat"
+                android:focusable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Yetkili Adı"
+                android:id="@+id/text_yetkili"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_yetkili"
+                android:selectAllOnFocus="true"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:paddingTop="25dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Açıklama (Not)"
+                android:id="@+id/text_aciklama"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <EditText
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edit_aciklama"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tamamlandı mı?"
+                android:id="@+id/text_tamamlandi"
+                android:textSize="24dp"
+                android:width="150dp" />
+
+            <Spinner
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_tamamlandi"
+                android:entries="@array/ziyaret_tamamlandi" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="KAYDET"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/buttonlines"
+                    android:textSize="24dp"
+                    android:onClick="kaydetEvent"
+                    android:textColor="@color/textcolor1"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

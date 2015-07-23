@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stokEkle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backcolor1"
+    android:paddingLeft="50dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ürün Adı"
+            android:id="@+id/text_urunadi_stokekle"
+            android:textSize="24dp"
+            android:width="150dp" />
+
+        <EditText
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_urunadi_stokekle"
+            android:layout_marginLeft="5dp"
+            android:editable="false"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="\?"
+            android:id="@+id/button_urunadi_stokekle"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/buttonlines"
+            android:onClick="stokkoduEvent"
+            android:textColor="@color/textcolor1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Miktar"
+            android:id="@+id/text_miktar_stokekle"
+            android:textSize="24dp"
+            android:width="150dp" />
+
+        <EditText
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_miktar_stokekle"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Birim Fiyat"
+            android:id="@+id/text_birimfiyat_stokekle"
+            android:textSize="24dp"
+            android:width="150dp" />
+
+        <EditText
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_birimfiyat_stokekle"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tutar"
+            android:id="@+id/text_tutar_stokekle"
+            android:textSize="24dp"
+            android:width="150dp" />
+
+        <EditText
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_tutar_stokekle"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</LinearLayout>
